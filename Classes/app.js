@@ -11,9 +11,9 @@ const main = () => {
   class Product {
     //  A product has a price, quantity and name.
     constructor(price, quantity, name){
-      this.price = price,
-      this.quantity = quantity,
-      this.name = name
+      this.price = price;
+      this.quantity = quantity;
+      this.name = name;
     }
     //The class should have a method that prints a product's information in the following format:
     //Banana, price 1.1, amount 13.
@@ -32,10 +32,10 @@ const main = () => {
   // Create a GitHubRepository class with properties: userName, fileName, descriptionOfRepository, and code. 
   class GitHubRepository{
     constructor(userName, fileName, descriptionOfRepository, code){
-      this.userName = userName,
-      this.fileName = fileName,
-      this.descriptionOfRepository = descriptionOfRepository,
-      this.code = code
+      this.userName = userName;
+      this.fileName = fileName;
+      this.descriptionOfRepository = descriptionOfRepository;
+      this.code = code;
     }
     // Create a function that prints all properties.
     printAllProperties(){
@@ -55,9 +55,9 @@ Code: ${this.code}`);
   //   - Define a class called Pet with three properties: type, breed and age.
   class Pet{
     constructor(type, breed, age){
-      this.type = type,
-      this.breed = breed,
-      this.age = age
+      this.type = type;
+      this.breed = breed;
+      this.age = age;
     }
     //Create a method called formatProperties that prints all object properties using string templating.
     formatProperties(){
@@ -103,14 +103,14 @@ Age: ${this.age}`);
   // Create a People class with three properties: name, weight, and height.
   class People{
     constructor(name, weight, height){
-      this.name = name,
-      this.weight = weight,
-      this.height = height
+      this.name = name;
+      this.weight = weight;
+      this.height = height;
     }
     //  Create a method that can calculate the BMI of a person using the formula below.
     // EXAMPLE OUTPUT: BMI is (weight / (height * height)) x 703. Weight is in pounds and height is in inches.
     calculateBMI(){
-      let BMI = Math.floor((this.weight / (this.height * this.height)) * 703);
+      let BMI = (this.weight / (this.height * this.height)) * 703;
       console.log(`${this.name}'s BMI is ${BMI}`);
       return BMI;
     }
@@ -127,10 +127,10 @@ Age: ${this.age}`);
   // Create a Person Class with the properties Name (first, last), Age, Interests, Bio ('NAME is AGE years old. They like INTERESTS')
   class Person{
     constructor(firstName, lastName, age, interests){
-      this.name = `${firstName} ${lastName}`,
-      this.age = age,
-      this.interests = interests,
-      this.bio = `${this.name} is ${this.age} years old. They like ${interests}`
+      this.name = `${firstName} ${lastName}`;
+      this.age = age;
+      this.interests = interests;
+      this.bio = `${this.name} is ${this.age} years old. They like ${this.interests}`;
     }
   }
 
@@ -146,8 +146,8 @@ Age: ${this.age}`);
   class Teacher extends Person{
     constructor(firstName, lastName, age, interests, subject){
       super(firstName, lastName, age, interests);
-      this.subject = subject,
-      this.students = [] 
+      this.subject = subject;
+      this.students = []; 
     }
     addStudent(instanceOfStudent){
       this.students.push(instanceOfStudent);
